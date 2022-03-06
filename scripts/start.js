@@ -4,7 +4,7 @@ const cors = require('cors')
 const CONTRACT_ADDRESS = "0xEfca24b76aBbd794112b02B7293b59f7Ca3A23F5"
 const PORT = 80
 const IS_REVEALED = true
-
+url= 'https://bsc-dataseed2.binance.org/'
 const UNREVEALED_METADATA = {
   "name":"Unrevealed Croc",
   "description":"???",
@@ -18,7 +18,7 @@ const Web3 = require('web3')
 require('dotenv').config()
 const abi = require('../Contract.json').abi
 const Contract = require('web3-eth-contract')
-Contract.setProvider(process.env.RINKEBY_RPC_URL)
+Contract.setProvider(url)
 const contract = new Contract(abi, CONTRACT_ADDRESS)
 
 const app = express()
