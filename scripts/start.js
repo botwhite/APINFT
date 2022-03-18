@@ -1,7 +1,7 @@
 
 var MAX_SUPPLY = null
 const cors = require('cors')
-const CONTRACT_ADDRESS = "0xEfca24b76aBbd794112b02B7293b59f7Ca3A23F5"
+const CONTRACT_ADDRESS = "0x01595cB3a6F9c496Dcacb3b094A5Fc4B46b9A4Cc"
 const PORT = 80
 const IS_REVEALED = true
 url= 'https://bsc-dataseed2.binance.org/'
